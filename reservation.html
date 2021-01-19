@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LE QUARTIER LOINTAIN |RESERVATION| RESTAURATION JAPONAISE STYLE POP CULTURE MANGA</title>
+		<link rel="stylesheet" href="ressources/normalize.css">
+		<link rel="stylesheet main" href="ressources/reservation.css">
+	</head>
+	<html>
+		<header class="main-header clearfix">  
+			<nav class="main-navbar">
+				<ul>
+					<li style="float:left"><a href="index.html"><img class="logo" src="ressources/img/logo1petit.png" width="100" height="100" alt="logo"></a></li>	
+					<div class="nav">
+						<li><a href="salle.html" >La Salle</a></li>
+						<li><a href="menus.html" >le Menu</a></li>
+						<li><a href="evenements.html">Les Event</a></li>
+						<li><a href="reservation.html" >Réserver</a></li>
+						<li><a href="contact.html" >Contact</a></li>
+					</div>
+				</ul>
+			</nav>
+		</header>
+	<body>
+		<div class="contact-title">
+				<h1>Réservation</h1>
+		</div>
+			<form id="contact-form" method="post" action="contact-form-handler.php">
+			  <div class="reservation-form">
+				<div class ="part" id="reservation-div">
+					<div class="oneonline">
+					<label>Nombre de personnes : </label>
+						<select name="nbPers" class="form-control nbPers"  required>
+							   <option value="1">1</option>
+							   <option value="2">2</option>
+							   <option value="3">3</option>
+							   <option value="4">4</option>
+							   <option value="5">5</option>
+							   <option value="6">6</option>
+							   <option value="7">7</option>
+							   <option value="8">8</option>
+							   <option value="9">9</option>
+							   <option value="10">10</option>
+							 </select>
+					</div>
+					<label>Date et heure : </label>
+					<div class="twoonline">
+						<input name="date" type="date" class="form-control date" required>
+						<input type="time" name="Heure d'arriver" class="form-control" required>
+					</div>
+				</div>
+					  <div class ="part" id="identity-div">
+					<label>Votre identité</label>
+					<div class="twoonline">
+						<input name="nbPers" type="text" class="form-control prenom" placeholder="Nom" required>
+						<input name="nbPers" type="text" class="form-control prenom" placeholder="Prénom" required>
+					</div>
+				</div>
+				<div class ="part" id="coords-div">
+					<label>Vos coordonnés</label>
+					<div class="twoonline">
+						<input name="nbPers" type="text" class="form-control prenom" placeholder="Adresse" required>
+						<input name="nbPers" type="text" class="form-control prenom" placeholder="Code Postal" required>
+					</div>
+					<div class="oneonline">
+						<input name="nbPers" type="tel" class="form-control prenom" placeholder="Téléphone" required>
+						<input name="nbPers" type="email" class="form-control prenom" placeholder="Adresse Mail" required>
+					</div>
+				</div>
+				<input type="submit" class="form-control submit" value="RESERVER">
+			  </div>
+			</form>
+	</body>
+</html>
+

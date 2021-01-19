@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>LE QUARTIER LOINTAIN |INDEX| RESTAURATION JAPONAISE STYLE POP CULTURE MANGA</title>
+	<link rel="stylesheet" href="ressources/normalize.css">
+	<link rel="stylesheet main" href="ressources/index.css">
+	<audio autoplay id="myTune" src="ressources/song.wav"></audio>
+	<script>
+
+	function aud_play_pause() {
+	  var myAudio = document.getElementById("myTune");
+	  if (myAudio.paused) {
+		myAudio.play();
+		document.getElementById("playpausemusic").childNodes[0].nodeValue="pause";
+	  } else {
+		myAudio.pause();
+		document.getElementById("playpausemusic").childNodes[0].nodeValue="jouer ";
+	  }
+	}
+	</script>
+</head>
+<body>
+	<header class="main-header clearfix">  
+        <nav class="main-navbar">
+            <ul>
+                <li style="float:left"><a href="index.html"><img class="logo" src="ressources/img/logo1petit.png" width="100" height="100" alt="logo"></a></li>	
+				<div class="nav">
+					<li><a href="salle.html" >La Salle</a></li>
+					<li><a href="menus.html" >le Menu</a></li>
+					<li><a href="evenements.html">Les Event</a></li>
+					<li><a href="reservation.html" >Réserver</a></li>
+					<li><a href="contact.html" >Contact</a></li>
+					<li><a href="#"  onclick="aud_play_pause()"><span id="playpausemusic" width="1000px;">Jouer Musique</span></a></li>
+				</div>
+			</ul>
+        </nav>
+    </header>
+					
+	<main>
+		<div class="clearfix">
+			<map id="carte">
+				<area shape="rect" coords="100,100 500,500" href="#" >
+			</map>
+			<img src="ressources/img/cuisineTxt.png" width="100%" style="float:top; margin-top:-200px;"> </img>
+		</div>
+	</main>
+</body>
+</html>

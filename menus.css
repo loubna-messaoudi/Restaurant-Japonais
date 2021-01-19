@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('leaguespartan-bold.eot');
+    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('leaguespartan-bold.woff2') format('woff2'),
+         url('leaguespartan-bold.woff') format('woff'),
+         url('leaguespartan-bold.ttf') format('truetype'),
+         url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.clearfix { 
+display: inline-block; 
+display: block; 
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  
+
+
+.main-container { 
+    max-width:auto; 
+    margin:0; 
+    }
+
+/*.main-header {
+    height: 300px;
+
+    background-image: url(header-background.png);
+    background-position: right 45% bottom 45%;
+    
+}*/
+
+.sidebar-col {
+    margin-top: 35px;
+	width: 25%;
+	display:block;
+	list-style:none;
+    z-index:3;
+    float: left;
+    margin-bottom: 1px;
+}
+
+.sidebar-col h4 {
+    margin: 0;
+}
+
+.sidebar-col ul li {
+    list-style: none;
+}
+
+.sidebar-col ul li a {
+    color: #444;
+	display: block;
+	background: #fff;
+	line-height: 50px;
+    padding: 0px 20px;
+    text-decoration: none;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    font-size: 17px;
+    font-family: "Arial", sans-serif;
+    border-radius: 30px;
+}
+
+
+.sidebar-col a:hover {
+    background: #ddd;
+    color: palevioletred;
+    
+
+}
+#acompagnement:focus ~ #main #side #link-accom{
+    color: #ECD89D;
+}
+
+.main-col {
+    margin-top: 20px;
+    width: 70%;
+    float: right;
+    z-index: 1;
+}
+.container {
+	
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.panel{
+    min-width: 70%;
+	height: 80vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: absolute;
+	margin-top: -50%;
+	opacity: 0;
+	z-index:1;
+	-webkit-transition: opacity .6s ease-in-out;
+	-moz-transition: opacity .6s ease-in-out;
+	-o-transition: opacity .6s ease-in-out;
+	-ms-transition: opacity .6s ease-in-out;
+	transition: opacity .6s ease-in-out;
+}
+.panel:target{
+	opacity: 1;
+	margin-top: 0%;
+}
+.panel .titres {
+    margin:1em 1em;
+    height: 50px;
+    width: auto;
+}
+
+.panel .s-titres {
+    margin:0px 0px 1.5em;
+    height: 25px;
+    width: auto;
+}
+
+.item-container {
+    position: relative;
+    text-align: left;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1% auto 4em;
+	/* Ajouté */
+	
+}
+
+.panel .item-container img {
+    width: 100%;
+    height: auto;
+}
+
+.item {
+    margin: 0 1% 75px;
+    width: 21%;
+	background: linear-gradient(#DB7093, #FFC0CB);
+	
+	padding: 10px;
+}
+
